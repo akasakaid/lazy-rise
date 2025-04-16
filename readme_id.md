@@ -79,6 +79,7 @@ pip install -r requirements.txt
 1. Edit file `config.py`:
    - Isi data provider captcha (lihat [Provider Captcha](#provider-captcha))
    - Konfigurasi proxy jika diperlukan (lihat [Provider Proxy](#provider-proxy))
+   - Isi simbol dari token yang ingin diklaim.
 
 2. Pilih mode operasi:
    - **1.) Generate Wallet Baru** (menggenerate wallet baru dan private key akan disimpan di `privatekeys.txt`)

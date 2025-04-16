@@ -76,6 +76,7 @@ pip install -r requirements.txt
 1. Edit `config.py` file:
    - Fill in captcha provider details (see [Captcha Providers](#captcha-providers))
    - Configure proxy if needed (see [Proxy Providers](#proxy-providers))
+   - - Fill in the symbol of the token you want to claim.
 
 2. Select operation mode:
    - **1.) Generate New Wallet** (creates new wallet and saves private key to `privatekeys.txt`)
