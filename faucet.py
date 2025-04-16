@@ -33,9 +33,9 @@ async def faucet(address, proxy):
     res = await http(ses=ses,url=check_url)
     eligible = res.json().get('results',{}).get(TOKEN,{}).get('eligible')
     if not eligible:
-        reason = res.json().get('results',{}).get(TOKEN,{}).get('eligible')
+        reason = res.json().get('results',{}).get(TOKEN,{}).get('reason')
         log(reason)
-        return None
+        return False
     ses.headers.update({"Content-Type":"application/json"})
     if provider == "anticaptcha":
         timet, token = await anticaptcha(apikey=apikey)
